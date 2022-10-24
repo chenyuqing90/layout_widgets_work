@@ -11,6 +11,8 @@ void main() {
         textAlign: TextAlign.justify,
       );
 
+  var img1 = Image.network("https://imgs.gvm.com.tw/upload/gallery/20210813/81667_01.jpg");
+  var img2 = Image.network("https://images.chinatimes.com/newsphoto/2022-07-25/656/20220725003210_20220725162100.jpg");
   var appBody = GridView.count(
     primary: false,
     padding: const EdgeInsets.all(20),
@@ -21,7 +23,7 @@ void main() {
       Container(
         padding: const EdgeInsets.all(8),
         color: Colors.teal[100],
-        child: const Text("He'd have you all unravel at the"),
+        child: img1,
       ),
       Container(
         padding: const EdgeInsets.all(8),
@@ -31,7 +33,7 @@ void main() {
       Container(
         padding: const EdgeInsets.all(8),
         color: Colors.teal[300],
-        child: const Text('Sound of screams but the'),
+        child: img2,
       ),
       Container(
         padding: const EdgeInsets.all(8),
