@@ -11,24 +11,16 @@ void main() {
         textAlign: TextAlign.justify,
       );
 
-  var appBody = Row(
+  var appBody = Column(
     children: const <Widget>[
-      Expanded(
-        child: Text('第一行文字',
-          textAlign: TextAlign.center,
-          style: TextStyle(fontSize: 20),),
-      ),
-      Expanded(
-        child: Text('第二行文字',
-          textAlign: TextAlign.center,
-          style: TextStyle(fontSize: 20),),
-      ),
+      Text('第一行文字', style: TextStyle(fontSize: 30),),
+      Text('第二行文字', style: TextStyle(fontSize: 30),),
       Expanded(
           child: FittedBox(
             fit: BoxFit.contain,
             child: FlutterLogo(),
           )),
-    ],
+]
   );
 
 
