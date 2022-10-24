@@ -11,16 +11,24 @@ void main() {
         textAlign: TextAlign.justify,
       );
 
-  var appBody = Center(
-      child: Container(
-        child: hiFlutter,
-        alignment: Alignment.topRight,
-        margin: const EdgeInsets.all(60.0),
-        color: Colors.cyanAccent,
-        width: 400.0,
-        height: 600.0,
-      )
-
+  var appBody = Row(
+    children: const <Widget>[
+      Expanded(
+        child: Text('第一行文字',
+          textAlign: TextAlign.center,
+          style: TextStyle(fontSize: 20),),
+      ),
+      Expanded(
+        child: Text('第二行文字',
+          textAlign: TextAlign.center,
+          style: TextStyle(fontSize: 20),),
+      ),
+      Expanded(
+          child: FittedBox(
+            fit: BoxFit.contain,
+            child: FlutterLogo(),
+          )),
+    ],
   );
 
 
